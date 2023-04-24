@@ -1,6 +1,7 @@
 <template>
   <router-view v-slot="{ Component, route }">
     <transition name="fade" mode="out-in" appear>
+      <!-- 过渡动效 -->
       <component
         :is="Component"
         v-if="route.meta.ignoreCache"
